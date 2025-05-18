@@ -31,8 +31,8 @@ body {
 
 .buttons {
     display: grid;
-    grid-template-columns: repeat(4, 60px);
-    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
 }
 
 button {
@@ -48,3 +48,19 @@ button {
     button:hover {
         background: #636366;
     }
+@media (max-width: 400px) {
+    .calculator {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+    }
+
+    #display {
+        font-size: 1.8rem;
+    }
+
+    button {
+        padding: 15px;
+        font-size: 1.2rem;
+    }
+}
